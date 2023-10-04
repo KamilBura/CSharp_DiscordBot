@@ -1,0 +1,198 @@
+[04.10.2023] [Info] 11:12:43 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 11:12:43 Gateway     Connecting
+[04.10.2023] [Warning] 11:12:47 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 11:12:47 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 11:12:47 Gateway     Connected
+[04.10.2023] [Info] 11:12:47 Gateway     Ready
+[04.10.2023] [Info] 11:15:13 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 11:15:13 Gateway     Connecting
+[04.10.2023] [Warning] 11:15:16 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 11:15:16 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 11:15:16 Gateway     Connected
+[04.10.2023] [Info] 11:15:16 Gateway     Ready
+[04.10.2023] [Info] 13:27:42 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 13:27:42 Gateway     Connecting
+[04.10.2023] [Warning] 13:27:50 Gateway     System.Net.Http.HttpRequestException: Der angegebene Host ist unbekannt. (discord.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Der angegebene Host ist unbekannt.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Discord.Net.Rest.DefaultRestClient.SendInternalAsync(HttpRequestMessage request, CancellationToken cancelToken, Boolean headerOnly)
+   at Discord.Net.Rest.DefaultRestClient.SendAsync(String method, String endpoint, CancellationToken cancelToken, Boolean headerOnly, String reason, IEnumerable`1 requestHeaders)
+   at Discord.Net.Queue.RestRequest.SendAsync()
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+[04.10.2023] [Info] 13:27:50 Gateway     Disconnecting
+[04.10.2023] [Info] 13:27:50 Gateway     Disconnected
+[04.10.2023] [Info] 13:27:51 Gateway     Connecting
+[04.10.2023] [Warning] 13:27:51 Gateway     System.Net.Http.HttpRequestException: Der angegebene Host ist unbekannt. (discord.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Der angegebene Host ist unbekannt.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Discord.Net.Rest.DefaultRestClient.SendInternalAsync(HttpRequestMessage request, CancellationToken cancelToken, Boolean headerOnly)
+   at Discord.Net.Rest.DefaultRestClient.SendAsync(String method, String endpoint, CancellationToken cancelToken, Boolean headerOnly, String reason, IEnumerable`1 requestHeaders)
+   at Discord.Net.Queue.RestRequest.SendAsync()
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+[04.10.2023] [Info] 13:27:51 Gateway     Disconnecting
+[04.10.2023] [Info] 13:27:51 Gateway     Disconnected
+[04.10.2023] [Info] 13:27:53 Gateway     Connecting
+[04.10.2023] [Warning] 13:27:53 Gateway     System.Net.Http.HttpRequestException: Der angegebene Host ist unbekannt. (discord.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Der angegebene Host ist unbekannt.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Discord.Net.Rest.DefaultRestClient.SendInternalAsync(HttpRequestMessage request, CancellationToken cancelToken, Boolean headerOnly)
+   at Discord.Net.Rest.DefaultRestClient.SendAsync(String method, String endpoint, CancellationToken cancelToken, Boolean headerOnly, String reason, IEnumerable`1 requestHeaders)
+   at Discord.Net.Queue.RestRequest.SendAsync()
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+[04.10.2023] [Info] 13:27:53 Gateway     Disconnecting
+[04.10.2023] [Info] 13:27:53 Gateway     Disconnected
+[04.10.2023] [Info] 13:27:56 Gateway     Connecting
+[04.10.2023] [Warning] 13:28:04 Gateway     System.Net.Http.HttpRequestException: Der angegebene Host ist unbekannt. (discord.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Der angegebene Host ist unbekannt.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Discord.Net.Rest.DefaultRestClient.SendInternalAsync(HttpRequestMessage request, CancellationToken cancelToken, Boolean headerOnly)
+   at Discord.Net.Rest.DefaultRestClient.SendAsync(String method, String endpoint, CancellationToken cancelToken, Boolean headerOnly, String reason, IEnumerable`1 requestHeaders)
+   at Discord.Net.Queue.RestRequest.SendAsync()
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetBotGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+[04.10.2023] [Info] 13:28:04 Gateway     Disconnecting
+[04.10.2023] [Info] 13:28:04 Gateway     Disconnected
+[04.10.2023] [Info] 13:28:11 Gateway     Connecting
+[04.10.2023] [Info] 13:28:55 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 13:28:55 Gateway     Connecting
+[04.10.2023] [Warning] 13:28:56 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 13:28:56 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 13:28:56 Gateway     Connected
+[04.10.2023] [Info] 13:28:57 Gateway     Ready
+[04.10.2023] [Info] 13:52:45 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 13:52:45 Gateway     Connecting
+[04.10.2023] [Warning] 13:52:47 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 13:52:47 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 13:52:47 Gateway     Connected
+[04.10.2023] [Info] 13:52:48 Gateway     Ready
+[04.10.2023] [Info] 14:16:40 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 14:16:40 Gateway     Connecting
+[04.10.2023] [Warning] 14:16:43 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 14:16:43 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 14:16:43 Gateway     Connected
+[04.10.2023] [Info] 14:16:44 Gateway     Ready
+[04.10.2023] [Info] 14:32:56 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 14:32:56 Gateway     Connecting
+[04.10.2023] [Warning] 14:32:57 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 14:32:57 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 14:32:57 Gateway     Connected
+[04.10.2023] [Info] 14:32:57 Gateway     Ready
+[04.10.2023] [Info] 14:33:34 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 14:33:34 Gateway     Connecting
+[04.10.2023] [Warning] 14:33:36 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 14:33:36 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 14:33:36 Gateway     Connected
+[04.10.2023] [Info] 14:33:37 Gateway     Ready
+[04.10.2023] [Info] 14:34:21 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 14:34:21 Gateway     Connecting
+[04.10.2023] [Warning] 14:34:23 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 14:34:23 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 14:34:23 Gateway     Connected
+[04.10.2023] [Info] 14:34:23 Gateway     Ready
+[04.10.2023] [Info] 14:54:15 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 14:54:15 Gateway     Connecting
+[04.10.2023] [Warning] 14:54:16 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 14:54:16 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 14:54:16 Gateway     Connected
+[04.10.2023] [Info] 14:54:16 Gateway     Ready
+[04.10.2023] [Info] 14:59:56 Discord     Discord.Net v3.12.0 (API v10)
+[04.10.2023] [Info] 14:59:56 Gateway     Connecting
+[04.10.2023] [Warning] 14:59:58 Gateway     You're using the GuildScheduledEvents gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Warning] 14:59:58 Gateway     You're using the GuildInvites gateway intent without listening to any events related to that intent, consider removing the intent from your config.
+[04.10.2023] [Info] 14:59:58 Gateway     Connected
+[04.10.2023] [Info] 14:59:58 Gateway     Ready

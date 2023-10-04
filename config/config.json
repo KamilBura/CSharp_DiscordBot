@@ -1,0 +1,22 @@
+{
+    "Main": {
+        "token": "MTA1NjYxNDc0MzcwMTQ1NDkxOQ.GZ9eUD.qCTWUXdSK3iypkhDTsrvzdwGaPoEskKNp8uYxs",
+        "clientID": "1056614743701454919",
+        "clientSecret": "mQW_jjukFp6U8QbGlPBZjxL-Xfk0QeL8"
+    },
+
+    "Discord": {
+        "MessageCacheSize": 100
+    },
+
+    "Commands": {
+        "Prefix": "!"
+    },
+
+    "Presence": {
+        "//Type//": "listening, playing, streaming, watching",
+        "Type": "listening",
+        "Text": "🐕 Just walking by...",
+        "Status": "dnd"
+    }
+}
